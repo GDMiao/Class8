@@ -1,0 +1,316 @@
+/* 
+  Localizable.strings
+  Class8Online
+
+  Created by chuliangliang on 15/10/20.
+  Copyright © 2015年 chuliangliang. All rights reserved.
+*/
+/***** 登录页 *****/
+"login_VC_nav_title" = "登录";
+"login_VC_account_placeholder" =  "输入账号";
+"login_VC_pwd_placeholder" = "输入密码";
+"login_VC_loginBtn_nomalText" = "登录";
+"login_VC_forgotpwd_nomalText" = "忘记密码?";
+"login_VC_not_userName" = "用户名不能为空";
+"login_VC_not_pwd" = "密码不能为空";
+
+
+/***** 密码找回 VC *****/
+"register_VC_telNum_placeholder" = "输入手机号";
+"register_VC_VerifyCode_placeholder" = "验证码";
+"register_VC_nav_register_title" = "注册";
+"register_VC_nav_resetpwd_title" = "找回密码";
+"register_VC_nav_bindTel_title" = "绑定手机号";
+"register_VC_getVerifyCodeBtn_nomalText" = "获取";
+"register_VC_nextBtn_nomalText" = "下一步";
+"register_VC_time_countDownText" = "重发";
+"register_VC_input_telNum" = "请输入正确的手机号码";
+"register_VC_input_VerifyCode" = "请输入验证码";
+"register_VC_verifyCode_didsend" = "验证码已发送";
+"register_VC_userNotExist" = "用户不存在";
+"register_VC_didBingTel" = "手机已经被绑定";
+"register_VC_sendVerifyCode_error" = "验证码发送失败";
+"register_VC_bindTel_done" = "绑定成功";
+"register_VC_verifyCode_error" = "验证码错误";
+"register_VC_Unknown_Error" = "未知错误";
+"register_VC_bindTel_error" = "绑定失败";
+
+
+/***** 修改密码/重置密码 *****/
+"writePwd_VC_nav_title" = "设置密码";
+"writePwd_VC_pwdMsg_Text" = "密码由6-20位数字、字母及下划线组成";
+"writePwd_VC_firstPwd_placeholder" = "输入密码";
+"writePwd_VC_secPwd_placeholder" = "再次输入密码";
+"writePwd_VC_doneBtn_nomalText" = "完成";
+"writePwd_VC_pwd_invalid" = "密码不符合规范";
+"writePwd_VC_pwd_no_consistent" = "两次密码不一致";
+"writePwd_VC_success" = "修改成功";
+"writePwd_VC_pwd_error" = "密码错误";
+"writePwd_VC_unKnown_error" = "未知错误";
+"writePwd_VC_verify_error" = "验证码错误";
+"writePwd_VC_not_bindTel" = "手机未被绑定";
+"writePwd_VC_faild" = "修改失败";
+
+
+/***** Tab VC *****/
+"tab_VC_clasListText" = "课表";
+"tab_VC_courseText" = "课程";
+"tab_VC_userAccount" = "我";
+
+
+/***** 我的日历页 *****/
+"myCalendar_VC_year" = "年";
+"myCalendar_VC_month" = "月";
+"myCalendar_VC_loadData_faild" = "请求失败";
+"myCalendar_VC_not_course" = "暂无课程";
+
+
+/***** 首页 *****/
+"main_VC_nav_title" = "我的课程";
+"main_VC_loadData_faild" = "请求失败";
+
+
+/***** 课程详情页 *****/
+"courseDetail_VC_nav_title" = "课程详情";
+"courseDetail_VC_load_Faild" = "请求失败";
+"courseDetail_infoView_intoBtn_nomalText" = "进入课堂";
+"courseDetail_infoView_Segment_itme01" = "课程简介";
+"courseDetail_infoView_Segment_itme02" = "ta的课程";
+"courseDetail_infoView_Segment_itme03" = "课程评价";
+"courseDetail_infoView_courseStyle_unknow" = "未知";
+"courseDetail_infoView_must" = "必修";
+"courseDetail_infoView__not_must" = "选修";
+"courseDetail_infoView_th" = "第";
+"courseDetail_infoView_week" = "周";
+"courseDetail_classView_no_class" = "暂无课节信息";
+"courseDetail_classView_th" = "第";
+"courseDetail_classView_classNun" = "节";
+"courseDetail_Comment_no_data" = "暂无评论";
+
+
+/***** 设置页(修改为个人中心页) *****/
+"setting_VC_nav_title" = "个人中心";
+"setting_VC_mySchool" = "我的学校";
+"setting_VC_userSafe" = "账号安全";
+"setting_VC_msgCencer" = "消息通知";
+"setting_VC_course_remind" = "课程提醒";
+"setting_VC_clear_cache" = "清除缓存";
+"setting_VC_about" = "关于课吧";
+"setting_VC_exit" = "退出登录";
+"setting_VC_calculate_cache" = "计算中...";
+"setting_VC_clearing_cache" = "清理中...";
+"setting_VC_logout" = "退出登录";
+"setting_VC_logout_cancel" = "取消";
+"setting_VC_onlyWiFi_Watch" = "仅通过Wi-Fi观看";
+"setting_VC_onleWiFi_Switch" = "Wi-Fi切换";
+"settting_VC_help_feedback" = "帮助与反馈";
+"settting_VC_reward_praise" = "打赏我们吧,来个好评(∩_∩)";
+
+
+/***** 个人资料页 *****/
+"person_VC_nav_title" = "个人资料";
+"person_VC_avatar" = "头像";
+"person_VC_nick" = "昵称";
+"person_VC_gender" = "性别";
+"person_VC_dec" = "简介";
+"person_VC_male" = "男";
+"person_VC_female" = "女";
+"person_VC_takePhoto" = "拍照";
+"person_VC_takePhoto_cancel" = "取消";
+"person_VC_photoslib" = "从手机相册选择";
+"person_VC_not_takePhoto" = "请在手机的设置->隐私->摄像头中允许Class 8使用该设备";
+"person_VC_no_campare" = "你的设备不能拍照!";
+"person_VC_not_photoslib" = "不能访问图片库";
+"person_VC_no_photoslib" = "设备不支持图片库";
+"person_VC_takePhoto_alert_ok" = "确定";
+"person_VC_upload_avatar_faild" = "头像上传失败";
+"person_VC_net_unknow_error" = "未知错误";
+"person_VC_net_faild" = "请求失败";
+
+
+/***** 设置昵称页 *****/
+"editNick_VC_nav1_title" = "设置昵称";
+"editNick_VC_nav2_title" = "用户信息";
+"editNick_VC_nav3_title" = "修改设备名";
+
+"editNick_VC_doneBtn_nomalTitle" = "完成";
+"editNick_VC_textField_placeholder" = "请输入昵称";
+"editNick_VC_takePhoto" = "拍照";
+"editNick_VC_photoslib" = "相册";
+"editNick_VC_takePhoto_cancel" = "取消";
+"editNick_VC_choose_avatar" = "请选择头像";
+"editNick_VC_input_nick" = "请输入昵称";
+"editNick_VC_not_takePhoto" = "请在手机的设置->隐私->摄像头中允许Class 8使用该设备";
+"editNick_VC_takePhoto_alert_ok" = "确定";
+"editNick_VC_no_campare" = "你的设备不能拍照!";
+"editNick_VC_not_photoslib" = "不能访问图片库";
+"editNick_VC_no_photoslib" = "设备不支持图片库";
+"editNick_VC_update_success" = "修改成功";
+"editNick_VC_update_faild" = "修改失败";
+"editNick_VC_Camera_DevNameplacholder" = "输入设备名";
+"editNick_VC_nav_leftBtnText" = "取消";
+"editNick_VC_nav_rightBtnText" = "保存";
+"editNick_VC_camera_name_no" = "设备名不能为空";
+
+/***** 设置性别页 *****/
+"sex_VC_nav_title" = "请选择性别";
+"sex_VC_update_success" = "修改成功";
+"sex_VC_update_faild" = "修改失败";
+"sex_VC_male" = "男";
+"sex_VC__female" = "女";
+
+
+/***** 设置简介页 *****/
+"userdec_VC_nav_title" = "简介";
+"userdec_VC_nav_rightbtn_nomalTitle" = "保存";
+"userdec_VC_textView_placeholder" = "请输入简介";
+"userdec_VC_dec_not_null" = "简介不能为空";
+"userdec_VC_update_success" = "保存成功";
+"userdec_VC_update_faild" = "保存失败";
+
+
+/***** 我的学校页 *****/
+"mySchool_VC_nav_title" = "我的学校";
+"mySchool_VC_departments" = "院系";
+"mySchool_VC_professional" = "专业";
+"mySchool_VC_grade" = "年级";
+"mySchool_VC_load_faild" = "获取失败";
+
+
+/***** 账号安全页 *****/
+"userSafe_VC_nav_title" = "账号安全";
+"userSafe_VC_update_pwd" = "修改密码";
+"userSafe_VC_change_tel" = "更换手机";
+"userSafe_VC_pwd_alert_title" = "验证原密码";
+"userSafe_VC_pwd_alert_cancel" = "取消";
+"userSafe_VC_pwd_alert_ok" = "确定";
+"userSafe_VC_pwd_alert_msg_ios5_before" = "为保护您的账户安全，修改密码前请填写您的原密码";
+"userSafe_VC_pwd_alert_msg_ios5_after" = "为保护您的账户安全，修改密码前请填写您的原密码\n\n";
+"userSafe_VC_pwd_error" = "密码错误";
+
+
+/***** 更换绑定手机号页 *****/
+"changeTelNum_VC_nav_title" = "手机号";
+"changeTelNum_VC_bindtelBtn_nomalTitle_bind" = "绑定";
+"changeTelNum_VC_bindtelBtn_nomalTitle_change" = "更换";
+"changeTelNum_VC_bindTel_msg" = "您还未绑定手机哦,赶快来绑定吧";
+
+
+/***** 消息中心页 *****/
+"msg_VC_nav_title" = "消息中心";
+"msg_VC_load_faild" = "请求失败";
+
+
+/***** 消息提醒设置页 *****/
+"noticeSet_VC_nav_title" = "课程提醒";
+"noticeSet_VC_10min" = "提前10分钟";
+"noticeSet_VC_30min" = "提前30分钟";
+"noticeSet_VC_1h" = "提前1小时";
+"noticeSet_VC_close" = "关闭";
+
+/***** 关于/二维码页 *****/
+"about_VC_nav_title" = "关于";
+"about_VC_download" = "二维码下载";
+"about_VC_go_AppStore" = "去APP评分";
+"about_VC_status_text" = "完美世界 版权所有";
+"about_VC_status_sub_text" = "Copyright@2014-2015";
+
+
+
+
+
+/***** 在线课堂<学生>页 *****/
+"live_VC_sigin_title" = "课堂签到";
+"live_VC_sigin_text" = "签个到吧 少年";
+"live_VC_sigin_ok" = "立即签到";
+"live_VC_sigin_out_title" = "下课签退";
+"live_VC_sigin_out_text" = "下课了,签个退吧";
+"live_VC_sigin_out_ok" = "确定";
+"live_VC_tcp_connecting" = "连接中...";
+"live_VC_camera_authString" = "请在手机的设置->隐私->摄像头中允许Class8使用该设备";
+"live_VC_camera_cancel" = "确定";
+"live_VC_not_camera" = "你的设备不能拍照!";
+"live_VC_stu_online_0" = "在线(0)";
+"live_VC_stu_online" = "在线";
+"live_VC_room_chat" = "讨论";
+"live_VC_courseWare" = "课件";
+"live_VC_tea_ask" = "老师提问了";
+"live_VC_role_stu" = "同学";
+"live_VC_role_tea" = "老师";
+"live_VC_tea_room_chat" = "老师已经允许课堂中聊天";
+"live_VC_tea_room_chat_not" = "老师已经禁止课堂中聊天";
+"live_VC_tea_hand" = "老师已经允许课堂中举手";
+"live_VC_tea_hand_not" = "老师已经禁止课堂中举手";
+"live_VC_sigin_upload_avatar_faild" = "头像上传失败";
+"live_VC_stulist_not_user" = "暂无用户";
+"live_VC_stulist_user_chat1" = "与";
+"live_VC_stulist_user_chat2" = "的对话";
+"live_VC_room_chat_all_no" = "当前课堂禁止聊天";
+"live_VC_room_chat_uesr_no" = "你已经被禁言";
+"live_VC_room_chat_len" = "内容过长";
+"live_VC_room_chat_system" = "系统";
+"live_VC_courseWareList_no" = "暂无课件";
+"live_VC_courseWare_wait" = "等待";
+"live_VC_courseWare_reload" = "重试";
+"live_VC_class_not_begin" = "老师还未上课,请耐心等待";
+"live_VC_class_over" = "课程已结束";
+"live_VC_courseWare_Media_loading" = "文件下载中...";
+
+
+/***** 工具类 <Utils> *****/
+"utils_unKnown_error" = "未知错误";
+"utils_ok" = "确定";
+"utils_week_1" = "周一";
+"utils_week_2" = "周二";
+"utils_week_3" = "周三";
+"utils_week_4" = "周四";
+"utils_week_5" = "周五";
+"utils_week_6" = "周六";
+"utils_week_7" = "周日";
+"utils_camera_no" = "请在手机的设置->隐私->摄像头中允许CLASS8手机助手使用该设备";
+"utils_mic_no" = "请在手机的设置->隐私->麦克风中允许CLASS8手机助手使用该设备";
+
+/***** 登录用户管理keepOnlineUtils *****/
+"keep_utils_loginName_not" = "登录名不可以为空";
+"keep_utils_loginPassWord_not" = "密码不可以为空";
+"keep_utils_login_loading" = "登录中...";
+"keep_utils_netWork_bad" = "网络不可用,请检查一下您的网络设置";
+"keep_utils_login_success" = "登录成功";
+"keep_utils_user_kickOut" = "你的用户在别处登录,请重新登录";
+"keep_utils_ok" = "确定";
+
+/***** CNetworkManager *****/
+"cnetwork_net_bad" = "服务器连接失败";
+"cnetwork_net_timeOut" = "请求超时请重试";
+"cnetwork_login_error_nameAndPwd" = "用户名/密码输入不正确";
+"cnetwork_login_error_userFrozen" = "该账号已被冻结，有问题请联系老师!";
+"cnetwork_login_error" = "登录失败，请重试";
+"cnetwork_token_validate" = "成功";
+"cnetwork_token_validate_faild" = "登录失败.请重新登录";
+"cnetwork_request_faild" = "请求出错,请稍后尝试";
+"cnetwork_class_pt" = "权限不够";
+"cnetwork_user_isKickOut" = "黑名单用户不可进入";
+"cnetwork_class_didlock" = "课堂已锁定,您不能进入";
+"cnetwork_camera_code_invalid" = "验证码失效";
+"cnetwork_camera_tea_not_exist" = "老师不存在";
+
+
+/***** JSONModel *****/
+"json_error_unknown" = "未知错误";
+
+
+/***** Class8小助手 *****/
+"class8_VC_aiders_title" = "Class8助手";
+"class8_VC_aiders_password_cannot_empty" = "code码不可以为空";
+"class8_VC_aiders_password_is_too_long" = "code过长";
+"class8_VC_aiders_test_successful" = "验证成功";
+
+"class8_VC_cam_Course_not_over_whether_return" = "课程未结束,如果退出此页面将不再传输音视频信号,是否返回?";
+"class8_VC_cam_no" = "否";
+"class8_VC_cam_yes" = "是";
+"class8_VC_cam_Live_to_enable" = "直播启用";
+"class8_VC_cam_Live_is_not_enabled" = "直播未启用";
+"class8_VC_cam_device_deleted" = "该设备已被删除";
+"class8_VC_cam_end_of_course" = "课程结束";
+"class8_VC_cam_tea_leave" = "教师离开已经课堂";
+"class8_VC_cam_end_sure" = "确定";

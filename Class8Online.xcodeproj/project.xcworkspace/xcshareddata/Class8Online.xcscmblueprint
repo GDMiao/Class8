@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "ff39b4a6-bcbb-f44c-bbd0-6aa92523f0c5++617",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "ff39b4a6-bcbb-f44c-bbd0-6aa92523f0c5++617" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ff39b4a6-bcbb-f44c-bbd0-6aa92523f0c5++617" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C8D4453A-F259-403E-A495-A6A11B48A4B9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ff39b4a6-bcbb-f44c-bbd0-6aa92523f0c5++617" : "Piano2.0\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Class8Online",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Class8Online.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.5.33.66\/svn\/OnLineEducationRepos",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ff39b4a6-bcbb-f44c-bbd0-6aa92523f0c5++617"
+    }
+  ]
+}
