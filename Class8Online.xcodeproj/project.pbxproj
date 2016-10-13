@@ -30,7 +30,6 @@
 		2803E9721AD7DE2C0093775A /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803E96B1AD7DE2C0093775A /* RegexKitLite.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2803E9731AD7DE2C0093775A /* SCGIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2803E96D1AD7DE2C0093775A /* SCGIFImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2803E9751AD7DF210093775A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2803E9741AD7DF210093775A /* CoreText.framework */; };
-		2803E9771AD7DF630093775A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2803E9761AD7DF630093775A /* libicucore.dylib */; };
 		280A8DDE1B1B08E900068262 /* CLMoviePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 280A8C681B1B08E800068262 /* CLMoviePlayViewController.m */; };
 		280A8DDF1B1B08E900068262 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 280A8C791B1B08E800068262 /* libcrypto.a */; };
 		280A8DE01B1B08E900068262 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 280A8C7A1B1B08E800068262 /* libssl.a */; };
@@ -228,8 +227,6 @@
 		282AA8C71B3161A700605017 /* CoreTextUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 282AA8C31B3161A700605017 /* CoreTextUtil.m */; };
 		282AA8C81B3161A700605017 /* CoreTextView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 282AA8C51B3161A700605017 /* CoreTextView.mm */; };
 		28412AC91B1ADC480035972F /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28412AC81B1ADC480035972F /* CoreMedia.framework */; };
-		28412ACB1B1ADC7E0035972F /* libpthread.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28412ACA1B1ADC7E0035972F /* libpthread.dylib */; };
-		28412ACD1B1ADC9D0035972F /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28412ACC1B1ADC9D0035972F /* libbz2.dylib */; };
 		284185601CA002B100D9E4F4 /* CourseDescriptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2841855E1CA002B100D9E4F4 /* CourseDescriptionView.m */; };
 		284185611CA002B100D9E4F4 /* CourseDescriptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2841855F1CA002B100D9E4F4 /* CourseDescriptionView.xib */; };
 		284185641CA002BF00D9E4F4 /* StarsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 284185631CA002BF00D9E4F4 /* StarsView.m */; };
@@ -278,7 +275,6 @@
 		28633E231B71B1B700D35556 /* UserChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28633E221B71B1B700D35556 /* UserChatView.m */; };
 		28633E271B72190100D35556 /* UserDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28633E251B72190100D35556 /* UserDescriptionViewController.m */; };
 		28633E281B72190100D35556 /* UserDescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28633E261B72190100D35556 /* UserDescriptionViewController.xib */; };
-		286364DD1ADBD1BF007D7CF0 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 286364DC1ADBD1BF007D7CF0 /* libiconv.dylib */; };
 		286364DF1ADBD1CA007D7CF0 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286364DE1ADBD1CA007D7CF0 /* CoreAudio.framework */; };
 		286364E11ADBD205007D7CF0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286364E01ADBD205007D7CF0 /* AudioToolbox.framework */; };
 		286364E31ADBD21C007D7CF0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286364E21ADBD21C007D7CF0 /* Accelerate.framework */; };
@@ -346,7 +342,6 @@
 		286D24931B15B97F00BF9C22 /* CLEmojiKeyBorad.m in Sources */ = {isa = PBXBuildFile; fileRef = 286D24381B15B97F00BF9C22 /* CLEmojiKeyBorad.m */; };
 		286D24941B15B97F00BF9C22 /* CLEmojiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286D243A1B15B97F00BF9C22 /* CLEmojiView.m */; };
 		2873DE371AE8D5130010BD05 /* NSDictionary+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 2873DE361AE8D5130010BD05 /* NSDictionary+JSON.m */; };
-		2874004F1AE8F1220079699E /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2874004E1AE8F1220079699E /* libxml2.2.dylib */; };
 		2874033B1AE900010079699E /* state.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 287403391AE900010079699E /* state.cxx */; };
 		28760BF41AD8B2D00059CCC8 /* PlayVoice.m in Sources */ = {isa = PBXBuildFile; fileRef = 28760BF31AD8B2D00059CCC8 /* PlayVoice.m */; };
 		28760BF71AD8B3390059CCC8 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 28760BF61AD8B3390059CCC8 /* Player.m */; };
@@ -386,7 +381,6 @@
 		287E050D1AE9074F00AEDFF2 /* loginclient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 287E050B1AE9074F00AEDFF2 /* loginclient.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		287E05121AE9075800AEDFF2 /* CNetworkCallBack.mm in Sources */ = {isa = PBXBuildFile; fileRef = 287E050F1AE9075800AEDFF2 /* CNetworkCallBack.mm */; };
 		287E05131AE9075800AEDFF2 /* CNetworkManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 287E05111AE9075800AEDFF2 /* CNetworkManager.mm */; };
-		287E05151AE90A3900AEDFF2 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 287E05141AE90A3900AEDFF2 /* libxml2.dylib */; };
 		287F30CD1B02DF3B0006E882 /* CourseDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 287F30CB1B02DF3B0006E882 /* CourseDetailViewController.m */; };
 		287F30CE1B02DF3B0006E882 /* CourseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 287F30CC1B02DF3B0006E882 /* CourseDetailViewController.xib */; };
 		287F30D11B02DFF90006E882 /* CourseInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 287F30D01B02DFF90006E882 /* CourseInfoView.m */; };
@@ -658,7 +652,6 @@
 		28A18E691AD545F300E3452B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A18E681AD545F300E3452B /* SystemConfiguration.framework */; };
 		28A18E6B1AD545FC00E3452B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A18E6A1AD545FC00E3452B /* MobileCoreServices.framework */; };
 		28A18E6D1AD5460600E3452B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A18E6C1AD5460600E3452B /* CoreGraphics.framework */; };
-		28A18E6F1AD5461700E3452B /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A18E6E1AD5461700E3452B /* libz.1.2.5.dylib */; };
 		28AC37411C92B41800215E52 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28AC37401C92B41800215E52 /* CoreTelephony.framework */; };
 		28AC37461C96526A00215E52 /* SchoolHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AC37441C96526A00215E52 /* SchoolHomeViewController.m */; };
 		28AC37471C96526A00215E52 /* SchoolHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AC37451C96526A00215E52 /* SchoolHomeViewController.xib */; };
@@ -858,7 +851,6 @@
 		28FAC8C91B5E42CA00BB6D80 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FAC8C41B5E42CA00BB6D80 /* FMResultSet.m */; };
 		28FAC8D01B5E430600BB6D80 /* ChatDBObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FAC8CC1B5E430600BB6D80 /* ChatDBObject.m */; };
 		28FAC8D11B5E430600BB6D80 /* InsertDBManagerQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FAC8CF1B5E430600BB6D80 /* InsertDBManagerQueue.m */; };
-		28FAC8D31B5E432100BB6D80 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FAC8D21B5E432100BB6D80 /* libsqlite3.dylib */; };
 		28FAC8D71B5E435900BB6D80 /* RoomWithChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FAC8D61B5E435900BB6D80 /* RoomWithChatView.m */; };
 		28FDCB781B81789900EBEDE6 /* MySchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDCB761B81789900EBEDE6 /* MySchoolViewController.m */; };
 		28FDCB791B81789900EBEDE6 /* MySchoolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28FDCB771B81789900EBEDE6 /* MySchoolViewController.xib */; };
@@ -1031,6 +1023,13 @@
 		71BBE4361CE1B3C700C6004F /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BBE42F1CE1B3C700C6004F /* libavutil.a */; };
 		71BBE4371CE1B3C700C6004F /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BBE4301CE1B3C700C6004F /* libswresample.a */; };
 		71BBE4381CE1B3C700C6004F /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BBE4311CE1B3C700C6004F /* libswscale.a */; };
+		A83A3C871DAF2B6400081E8A /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C861DAF2B6400081E8A /* libxml2.2.tbd */; };
+		A83A3C891DAF2D2300081E8A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C881DAF2D2300081E8A /* libsqlite3.tbd */; };
+		A83A3C8B1DAF2D2F00081E8A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C8A1DAF2D2F00081E8A /* libbz2.tbd */; };
+		A83A3C8D1DAF2D3800081E8A /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C8C1DAF2D3800081E8A /* libpthread.tbd */; };
+		A83A3C8F1DAF2D4A00081E8A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C8E1DAF2D4A00081E8A /* libiconv.tbd */; };
+		A83A3C911DAF2D5500081E8A /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C901DAF2D5500081E8A /* libicucore.tbd */; };
+		A83A3C931DAF2D6000081E8A /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A83A3C921DAF2D6000081E8A /* libz.1.2.5.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1071,7 +1070,6 @@
 		2803E96C1AD7DE2C0093775A /* SCGIFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCGIFImageView.h; sourceTree = "<group>"; };
 		2803E96D1AD7DE2C0093775A /* SCGIFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCGIFImageView.m; sourceTree = "<group>"; };
 		2803E9741AD7DF210093775A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
-		2803E9761AD7DF630093775A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		280A8C671B1B08E800068262 /* CLMoviePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLMoviePlayViewController.h; sourceTree = "<group>"; };
 		280A8C681B1B08E800068262 /* CLMoviePlayViewController.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; fileEncoding = 4; path = CLMoviePlayViewController.m; sourceTree = "<group>"; };
 		280A8C6B1B1B08E800068262 /* amf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amf.h; sourceTree = "<group>"; };
@@ -1565,8 +1563,6 @@
 		282AA8C41B3161A700605017 /* CoreTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextView.h; sourceTree = "<group>"; };
 		282AA8C51B3161A700605017 /* CoreTextView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CoreTextView.mm; sourceTree = "<group>"; };
 		28412AC81B1ADC480035972F /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		28412ACA1B1ADC7E0035972F /* libpthread.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpthread.dylib; path = usr/lib/libpthread.dylib; sourceTree = SDKROOT; };
-		28412ACC1B1ADC9D0035972F /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
 		2841855D1CA002B100D9E4F4 /* CourseDescriptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDescriptionView.h; sourceTree = "<group>"; };
 		2841855E1CA002B100D9E4F4 /* CourseDescriptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDescriptionView.m; sourceTree = "<group>"; };
 		2841855F1CA002B100D9E4F4 /* CourseDescriptionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDescriptionView.xib; sourceTree = "<group>"; };
@@ -1656,7 +1652,6 @@
 		28633E241B72190100D35556 /* UserDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDescriptionViewController.h; sourceTree = "<group>"; };
 		28633E251B72190100D35556 /* UserDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDescriptionViewController.m; sourceTree = "<group>"; };
 		28633E261B72190100D35556 /* UserDescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDescriptionViewController.xib; sourceTree = "<group>"; };
-		286364DC1ADBD1BF007D7CF0 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		286364DE1ADBD1CA007D7CF0 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		286364E01ADBD205007D7CF0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		286364E21ADBD21C007D7CF0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -1732,7 +1727,6 @@
 		286D243A1B15B97F00BF9C22 /* CLEmojiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLEmojiView.m; sourceTree = "<group>"; };
 		2873DE351AE8D5130010BD05 /* NSDictionary+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JSON.h"; sourceTree = "<group>"; };
 		2873DE361AE8D5130010BD05 /* NSDictionary+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JSON.m"; sourceTree = "<group>"; };
-		2874004E1AE8F1220079699E /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		287402FE1AE8FF7F0079699E /* AArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AArray.h; sourceTree = "<group>"; };
 		287402FF1AE8FF7F0079699E /* AAssist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AAssist.h; sourceTree = "<group>"; };
 		287403001AE8FF7F0079699E /* ACSWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACSWrapper.h; sourceTree = "<group>"; };
@@ -1836,7 +1830,6 @@
 		287E050F1AE9075800AEDFF2 /* CNetworkCallBack.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CNetworkCallBack.mm; sourceTree = "<group>"; };
 		287E05101AE9075800AEDFF2 /* CNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CNetworkManager.h; sourceTree = "<group>"; };
 		287E05111AE9075800AEDFF2 /* CNetworkManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CNetworkManager.mm; sourceTree = "<group>"; };
-		287E05141AE90A3900AEDFF2 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		287F30CA1B02DF3B0006E882 /* CourseDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailViewController.h; sourceTree = "<group>"; };
 		287F30CB1B02DF3B0006E882 /* CourseDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailViewController.m; sourceTree = "<group>"; };
 		287F30CC1B02DF3B0006E882 /* CourseDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CourseDetailViewController.xib; sourceTree = "<group>"; };
@@ -2192,7 +2185,6 @@
 		28A18E681AD545F300E3452B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		28A18E6A1AD545FC00E3452B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		28A18E6C1AD5460600E3452B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		28A18E6E1AD5461700E3452B /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		28AC37401C92B41800215E52 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		28AC37431C96526A00215E52 /* SchoolHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchoolHomeViewController.h; sourceTree = "<group>"; };
 		28AC37441C96526A00215E52 /* SchoolHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchoolHomeViewController.m; sourceTree = "<group>"; };
@@ -2460,7 +2452,6 @@
 		28FAC8CD1B5E430600BB6D80 /* DBConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConfig.h; sourceTree = "<group>"; };
 		28FAC8CE1B5E430600BB6D80 /* InsertDBManagerQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InsertDBManagerQueue.h; sourceTree = "<group>"; };
 		28FAC8CF1B5E430600BB6D80 /* InsertDBManagerQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InsertDBManagerQueue.m; sourceTree = "<group>"; };
-		28FAC8D21B5E432100BB6D80 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		28FAC8D51B5E435900BB6D80 /* RoomWithChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoomWithChatView.h; sourceTree = "<group>"; };
 		28FAC8D61B5E435900BB6D80 /* RoomWithChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoomWithChatView.m; sourceTree = "<group>"; };
 		28FDCB751B81789900EBEDE6 /* MySchoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySchoolViewController.h; sourceTree = "<group>"; };
@@ -2687,6 +2678,13 @@
 		71BBE42F1CE1B3C700C6004F /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
 		71BBE4301CE1B3C700C6004F /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
 		71BBE4311CE1B3C700C6004F /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		A83A3C861DAF2B6400081E8A /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		A83A3C881DAF2D2300081E8A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		A83A3C8A1DAF2D2F00081E8A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		A83A3C8C1DAF2D3800081E8A /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
+		A83A3C8E1DAF2D4A00081E8A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		A83A3C901DAF2D5500081E8A /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		A83A3C921DAF2D6000081E8A /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2694,6 +2692,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83A3C931DAF2D6000081E8A /* libz.1.2.5.tbd in Frameworks */,
+				A83A3C911DAF2D5500081E8A /* libicucore.tbd in Frameworks */,
+				A83A3C8F1DAF2D4A00081E8A /* libiconv.tbd in Frameworks */,
+				A83A3C8D1DAF2D3800081E8A /* libpthread.tbd in Frameworks */,
+				A83A3C8B1DAF2D2F00081E8A /* libbz2.tbd in Frameworks */,
+				A83A3C891DAF2D2300081E8A /* libsqlite3.tbd in Frameworks */,
+				A83A3C871DAF2B6400081E8A /* libxml2.2.tbd in Frameworks */,
 				6E3B78BF1D76796B00022E19 /* libxml2.tbd in Frameworks */,
 				6E5ED1B91CFD626F002509BB /* libsqlite3.0.tbd in Frameworks */,
 				6E250E1F1CF6E30300900E22 /* libz.tbd in Frameworks */,
@@ -2703,13 +2708,8 @@
 				6E250E1D1CF6E2BF00900E22 /* CoreMotion.framework in Frameworks */,
 				28AC37411C92B41800215E52 /* CoreTelephony.framework in Frameworks */,
 				71BBE4281CE1B1AD00C6004F /* libIoLib.a in Frameworks */,
-				28FAC8D31B5E432100BB6D80 /* libsqlite3.dylib in Frameworks */,
-				28412ACD1B1ADC9D0035972F /* libbz2.dylib in Frameworks */,
-				28412ACB1B1ADC7E0035972F /* libpthread.dylib in Frameworks */,
 				28412AC91B1ADC480035972F /* CoreMedia.framework in Frameworks */,
-				287E05151AE90A3900AEDFF2 /* libxml2.dylib in Frameworks */,
 				71BBE42A1CE1B29D00C6004F /* libx264.a in Frameworks */,
-				2874004F1AE8F1220079699E /* libxml2.2.dylib in Frameworks */,
 				286C12EC1ADD1D4C00DEC7E2 /* Security.framework in Frameworks */,
 				286364E51ADBD229007D7CF0 /* QuartzCore.framework in Frameworks */,
 				286364E31ADBD21C007D7CF0 /* Accelerate.framework in Frameworks */,
@@ -2720,8 +2720,6 @@
 				71BBE4361CE1B3C700C6004F /* libavutil.a in Frameworks */,
 				6E0620B51D24FA8300266997 /* libssl.a in Frameworks */,
 				71BBE4341CE1B3C700C6004F /* libavfilter.a in Frameworks */,
-				286364DD1ADBD1BF007D7CF0 /* libiconv.dylib in Frameworks */,
-				2803E9771AD7DF630093775A /* libicucore.dylib in Frameworks */,
 				6E0620B41D24FA8300266997 /* libcrypto.a in Frameworks */,
 				71BBE4321CE1B3C700C6004F /* libavcodec.a in Frameworks */,
 				2811A0D61AD77D2D0000AA04 /* MediaPlayer.framework in Frameworks */,
@@ -2731,7 +2729,6 @@
 				71BBE4371CE1B3C700C6004F /* libswresample.a in Frameworks */,
 				280A8DDF1B1B08E900068262 /* libcrypto.a in Frameworks */,
 				6E0620B11D24F9D600266997 /* AlipaySDK.framework in Frameworks */,
-				28A18E6F1AD5461700E3452B /* libz.1.2.5.dylib in Frameworks */,
 				6EAC84071D3E193F007C5CCC /* libWeChatSDK.a in Frameworks */,
 				289CD1101BB3A35500E5D89C /* libfaac.a in Frameworks */,
 				28A18E6D1AD5460600E3452B /* CoreGraphics.framework in Frameworks */,
@@ -4578,7 +4575,6 @@
 			children = (
 				28A18DBB1AD521B100E3452B /* Class8Online */,
 				28A18DBA1AD521B100E3452B /* Products */,
-				6E3B78BD1D76796B00022E19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -4724,9 +4720,9 @@
 				28C54A9F1AEE396600BA0E08 /* FileManager */,
 				28A18E0F1AD5389800E3452B /* UIViewExt */,
 				287A6E281ADE277C006CE484 /* Utils.h */,
+				287A6E291ADE277C006CE484 /* Utils.m */,
 				716440FA1D76DBAF0082E25D /* NetTran.h */,
 				716440FB1D76DC0E0082E25D /* NetTran.cpp */,
-				287A6E291ADE277C006CE484 /* Utils.m */,
 				28633E1D1B70AB4000D35556 /* UIImage+Resize.h */,
 				28633E1E1B70AB4000D35556 /* UIImage+Resize.m */,
 			);
@@ -4905,6 +4901,14 @@
 				6E5ED1B81CFD626F002509BB /* libsqlite3.0.tbd */,
 				6E250E201CF6E35000900E22 /* libc++.tbd */,
 				6E250E1E1CF6E30300900E22 /* libz.tbd */,
+				A83A3C921DAF2D6000081E8A /* libz.1.2.5.tbd */,
+				A83A3C901DAF2D5500081E8A /* libicucore.tbd */,
+				A83A3C8E1DAF2D4A00081E8A /* libiconv.tbd */,
+				A83A3C8C1DAF2D3800081E8A /* libpthread.tbd */,
+				A83A3C8A1DAF2D2F00081E8A /* libbz2.tbd */,
+				A83A3C881DAF2D2300081E8A /* libsqlite3.tbd */,
+				A83A3C861DAF2B6400081E8A /* libxml2.2.tbd */,
+				6E3B78BE1D76796B00022E19 /* libxml2.tbd */,
 				28A18E6A1AD545FC00E3452B /* MobileCoreServices.framework */,
 				28A18E661AD545E500E3452B /* CFNetwork.framework */,
 				28A18E681AD545F300E3452B /* SystemConfiguration.framework */,
@@ -4921,14 +4925,6 @@
 				286C12EB1ADD1D4C00DEC7E2 /* Security.framework */,
 				286364E21ADBD21C007D7CF0 /* Accelerate.framework */,
 				286364E01ADBD205007D7CF0 /* AudioToolbox.framework */,
-				28FAC8D21B5E432100BB6D80 /* libsqlite3.dylib */,
-				28412ACC1B1ADC9D0035972F /* libbz2.dylib */,
-				28412ACA1B1ADC7E0035972F /* libpthread.dylib */,
-				287E05141AE90A3900AEDFF2 /* libxml2.dylib */,
-				2874004E1AE8F1220079699E /* libxml2.2.dylib */,
-				286364DC1ADBD1BF007D7CF0 /* libiconv.dylib */,
-				2803E9761AD7DF630093775A /* libicucore.dylib */,
-				28A18E6E1AD5461700E3452B /* libz.1.2.5.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -5446,14 +5442,6 @@
 				6E3A8EFE1D2BAFF400CBB7D1 /* DHome24@3x.png */,
 			);
 			path = DLHome;
-			sourceTree = "<group>";
-		};
-		6E3B78BD1D76796B00022E19 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6E3B78BE1D76796B00022E19 /* libxml2.tbd */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6E3F2B401C9FCA8600716F76 /* HelpFeedbackViewController */ = {
@@ -6777,7 +6765,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "c0052e52-c7f2-48d6-82db-0f8255df6058";
@@ -6814,7 +6802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "c0052e52-c7f2-48d6-82db-0f8255df6058";
 				SDKROOT = iphoneos;
@@ -6830,13 +6818,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/lib/libxml2.dylib,
+					"$(SRCROOT)/Class8Online",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/AliPaySDK",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/WxPaySDK/OpenSDK1.7.1",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Class8Online/Class8Online.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -6845,7 +6836,6 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(PROJECT_DIR)/Class8Online/CNetwork/Headers",
 					"$(PROJECT_DIR)/Class8Online/CNetwork/Protocols",
@@ -6857,27 +6847,31 @@
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/CLMoviePlayViewController/mediaplayer/include",
 					"$(SRCROOT)/Class8Online/ThirdLib/AliPaySDK",
 					"$(SRCROOT)/Class8Online/ThirdLib/WxPaySDK/OpenSDK1.7.1",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = Class8Online/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/Class8Online",
 					"$(PROJECT_DIR)/Class8Online/CNetwork/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/CLMoviePlayViewController/librtmp/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/CLMoviePlayViewController/mediaplayer/ffmpeg/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/publish/libfaac/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/publish/libx264",
-					"$(SRCROOT)/Class8Online",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/AliPaySDK",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/WxPaySDK/OpenSDK1.7.1",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/JPush-iOS-SDK-2.1.8",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-lxml2",
 					"-ObjC",
 					"-all_load",
+					"-lxml2.2",
+					"-lxml2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.class8OnlineNew.class8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -6898,17 +6892,18 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/usr/lib/libxml2.dylib,
+					"$(SRCROOT)/Class8Online",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/AliPaySDK",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/WxPaySDK/OpenSDK1.7.1",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				GCC_INPUT_FILETYPE = automatic;
+				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Class8Online/Class8Online.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SDKROOT)/usr/include/libxml2",
 					"$(PROJECT_DIR)/Class8Online/CNetwork/Headers",
 					"$(PROJECT_DIR)/Class8Online/CNetwork/Protocols",
@@ -6920,27 +6915,31 @@
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/CLMoviePlayViewController/mediaplayer/include",
 					"$(SRCROOT)/Class8Online/ThirdLib/AliPaySDK",
 					"$(SRCROOT)/Class8Online/ThirdLib/WxPaySDK/OpenSDK1.7.1",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = Class8Online/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(SRCROOT)/Class8Online",
 					"$(PROJECT_DIR)/Class8Online/CNetwork/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/CLMoviePlayViewController/librtmp/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/CLMoviePlayViewController/mediaplayer/ffmpeg/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/publish/libfaac/lib",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/publish/libx264",
-					"$(SRCROOT)/Class8Online",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/AliPaySDK",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/WxPaySDK/OpenSDK1.7.1",
 					"$(PROJECT_DIR)/Class8Online/ThirdLib/JPush-iOS-SDK-2.1.8",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-lxml2",
 					"-ObjC",
 					"-all_load",
+					"-lxml2.2",
+					"-lxml2",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.class8OnlineNew.class8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
