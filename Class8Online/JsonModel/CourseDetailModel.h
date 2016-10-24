@@ -31,7 +31,9 @@ studentTotal;                                                           /*学生
 @property (assign, nonatomic) BOOL canEnterClass;                       /*是否可以进入课程直播页*/
 @property (assign, nonatomic) long long canEnterClassID;                     /*是否可以进入课程直播页*/
 @property (assign, nonatomic) int signupStatus;                       /*报名状态 0未报名 1已报名*/
-@property (assign, nonatomic) int classHadFinished;                   /*课程结束状态 0 未结束 1 结束了*/
+@property (assign, nonatomic) int classHadFinished;                   /*课程结束状态 */
+                                            /*classHadFinished< classTotal未结束 classHadFinished= classTotal 结束了*/
+@property (assign, nonatomic) int classTotal;                         /*课节总数*/
 
 - (id)initCourseDetailJosn:(NSDictionary *)json;
 

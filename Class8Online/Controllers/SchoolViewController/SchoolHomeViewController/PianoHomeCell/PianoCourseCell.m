@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *courseImg;
 @property (weak, nonatomic) IBOutlet UILabel *titleStr;
 @property (weak, nonatomic) IBOutlet UILabel *dataStr;
-@property (weak, nonatomic) IBOutlet UILabel *timeStr;
 @property (weak, nonatomic) IBOutlet UILabel *nameStr;
 @property (weak, nonatomic) IBOutlet UIImageView *pricebkImg;
 @property (weak, nonatomic) IBOutlet UILabel *priceStr;
@@ -99,44 +98,41 @@
         self.nameStr.left = self.icon_name.right + 10;
         self.nameStr.top = self.icon_name.top;
         
-//        if(self.course.startTime){
-//            NSString *datastr = [NSMutableString stringWithFormat:@"%@",self.course.startTime];
-//            //        datastr = [datastr substringFromIndex:5];
-//            datastr = [datastr substringToIndex:5];
-////            NSLog(@"%@",datastr);
-//            self.dataStr.text = datastr;
-//        }
-        self.dataStr.text = self.course.startTime;
+        self.dataStr.text = self.course.latelyStartTimePlan;
         [self.dataStr sizeToFit];
         self.dataStr.left = self.icon_time.right + 10;
         self.dataStr.top = self.icon_time.top;
+        NSMutableAttributedString *AttributedStr = [[NSMutableAttributedString alloc]initWithString:self.course.latelyStartTimePlan];
+//        [AttributedStr addAttribute:NSFontAttributeName
+//         
+//                              value:[UIFont systemFontOfSize:14.0]
+//         
+//                              range:NSMakeRange(2, 2)];
         
-//        if (self.course.startTime) {
-//            NSString *timestr = [NSMutableString stringWithFormat:@"%@",self.course.startTime];
-//            timestr = [timestr substringFromIndex:6];
-////            NSLog(@"%@",timestr);
-//            self.timeStr.text = timestr;
-//        }
-        self.timeStr.text = @"";
-        self.timeStr.left = self.dataStr.right + 10;
-        self.timeStr.top = self.dataStr.top;
+        [AttributedStr addAttribute:NSForegroundColorAttributeName
+         
+                              value:[UIColor colorWithRed:80.0/255.0 green:179.0/255.0 blue:57.0/255.0 alpha:1]
+         
+                              range:NSMakeRange(6, 5)];
+        self.dataStr.attributedText = AttributedStr;
         
-        self.pricebkImg.left = self.timeStr.right + 10;
-        self.pricebkImg.top = self.timeStr.top;
-        self.pricebkImg.width = 70;
+        self.pricebkImg.left = self.dataStr.right + 10;
+        self.pricebkImg.top = self.dataStr.top;
+        self.pricebkImg.width = 65;
         self.pricebkImg.right = SCREENWIDTH - 20;
         
         self.priceStr.text = [NSString stringWithFormat:@" %@元",self.course.priceTotal];
         [self.priceStr sizeToFit];
-        self.priceStr.left = self.pricebkImg.left + (self.pricebkImg.width - self.priceStr.width) /2;
-        self.priceStr.top = self.pricebkImg.top + (self.pricebkImg.height - self.priceStr.height) /2;
-        
+//        self.priceStr.left = self.pricebkImg.left + (self.pricebkImg.width - self.priceStr.width) /2;
+//        self.priceStr.top = self.pricebkImg.top + (self.pricebkImg.height - self.priceStr.height) /2;
+        self.priceStr.frame = self.pricebkImg.frame;
+        self.priceStr.left = self.pricebkImg.left + 5;
+        self.priceStr.textAlignment = NSTextAlignmentCenter;
         
         height = self.courseImg.bottom + 10;
         self.bottonLine.left = 0;
         self.bottonLine.top = height - 1;
     }else{
-//        self.backgroundColor = [UIColor greenColor];
         self.sectionView.hidden = YES;
         
         self.courseImg.left = 20;
@@ -173,38 +169,36 @@
         self.nameStr.left = self.icon_name.right + 10;
         self.nameStr.top = self.icon_name.top;
         
-//        if(self.course.startTime){
-//        NSString *datastr = [NSMutableString stringWithFormat:@"%@",self.course.startTime];
-////        datastr = [datastr substringFromIndex:5];
-//        datastr = [datastr substringToIndex:5];
-////        NSLog(@"%@",datastr);
-//        self.dataStr.text = datastr;
-//        }
-        self.dataStr.text = self.course.startTime;
+        self.dataStr.text = self.course.latelyStartTimePlan;
         [self.dataStr sizeToFit];
         self.dataStr.left = self.icon_time.right + 10;
         self.dataStr.top = self.icon_time.top;
+        NSMutableAttributedString *AttributedStr = [[NSMutableAttributedString alloc]initWithString:self.course.latelyStartTimePlan];
+//        [AttributedStr addAttribute:NSFontAttributeName
+//         
+//                              value:[UIFont systemFontOfSize:14.0]
+//         
+//                              range:NSMakeRange(2, 2)];
         
-//        if (self.course.startTime) {
-//            NSString *timestr = [NSMutableString stringWithFormat:@"%@",self.course.startTime];
-//            timestr = [timestr substringFromIndex:6];
-////            NSLog(@"%@",timestr);
-//            self.timeStr.text = timestr;
-//        }
-        self.timeStr.text = @"";
-        [self.timeStr sizeToFit];
-        self.timeStr.left = self.dataStr.right + 10;
-        self.timeStr.top = self.dataStr.top;
+        [AttributedStr addAttribute:NSForegroundColorAttributeName
+         
+                              value:[UIColor colorWithRed:80.0/255.0 green:179.0/255.0 blue:57.0/255.0 alpha:1]
+         
+                              range:NSMakeRange(6, 5)];
+        self.dataStr.attributedText = AttributedStr;
         
-        self.pricebkImg.left = self.timeStr.right + 10;
-        self.pricebkImg.top = self.timeStr.top;
-        self.pricebkImg.width = 70;
+        self.pricebkImg.left = self.dataStr.right + 10;
+        self.pricebkImg.top = self.dataStr.top;
+        self.pricebkImg.width = 65;
         self.pricebkImg.right = SCREENWIDTH - 20;
         
         self.priceStr.text = [NSString stringWithFormat:@" %@元",self.course.priceTotal];
         [self.priceStr sizeToFit];
-        self.priceStr.left = self.pricebkImg.left + (self.pricebkImg.width - self.priceStr.width) /2;
-        self.priceStr.top = self.pricebkImg.top + (self.pricebkImg.height - self.priceStr.height) /2;
+//        self.priceStr.left = self.pricebkImg.left + (self.pricebkImg.width - self.priceStr.width) /2;
+//        self.priceStr.top = self.pricebkImg.top + (self.pricebkImg.height - self.priceStr.height) /2;
+        self.priceStr.frame = self.pricebkImg.frame;
+        self.priceStr.left = self.pricebkImg.left + 5;
+        self.priceStr.textAlignment = NSTextAlignmentCenter;
         
         height = self.courseImg.bottom + 10;
         self.bottonLine.left = 0;

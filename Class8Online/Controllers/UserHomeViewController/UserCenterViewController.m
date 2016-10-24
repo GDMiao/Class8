@@ -461,7 +461,8 @@ const int onePageCount = 5;                                 //每页数据个数
     
     //学校名
     NSString *organizationLabel = [Utils objectIsNotNull:self.user.schoolName]?self.user.schoolName:self.user.company;
-    self.organizationLabel.text = @"呢克里斯刚琴行";
+    
+    self.organizationLabel.text = organizationLabel.length > 0 ? organizationLabel :@"未加入机构";
     [self.organizationLabel sizeToFit];
     self.organizationLabel.top = self.teaRzIcon.bottom + 5;
     self.organizationLabel.left = self.teaRzIcon.left;
@@ -769,7 +770,7 @@ const int onePageCount = 5;                                 //每页数据个数
     }else if (CellStyle_user_Create == self.cstyle){
         cellStyleTxt = @"我的创建";
     }else if (CellStyle_tea_home == self.cstyle){
-        cellStyleTxt = @"我的创建";
+        cellStyleTxt = @"教师首页";
     }
     cellHeight = [cell setCellContent:cmodel withCellStyleTxt:cellStyleTxt userinfoModel:u];
     return cellHeight;

@@ -74,7 +74,9 @@
         self.teaImg.left = 20;
         self.teaImg.top = self.sectionView.bottom + 10;
         
-        self.nameStr.text = self.user.realname;
+        NSString *realName = self.user.realname.length > 0 ? self.user.realname :@"      ";
+        
+        self.nameStr.text = realName;
         [self.nameStr sizeToFit];
 //        self.nameStr.backgroundColor = [UIColor redColor];
         self.nameStr.left = self.teaImg.right + 10;
@@ -83,14 +85,18 @@
         
         self.medalsImg.left = self.nameStr.right + 10;
         self.medalsImg.top = self.nameStr.top;
+        self.medalsImg.hidden = YES;
         
-        self.organizationStr.text = @"机构名称:全国第一钢琴会所";
+        NSString *organizationName = self.user.company.length > 0 ? self.user.company : @"未加入机构";
+        
+        self.organizationStr.text = [NSString stringWithFormat:@"机构名称：%@",organizationName];
         [self.organizationStr sizeToFit];
         self.organizationStr.left = self.nameStr.left;
         self.organizationStr.top = self.nameStr.bottom + 10;
         
         self.logoImg.left = self.organizationStr.right + 10;
         self.logoImg.top = self.organizationStr.top;
+        self.logoImg.hidden = YES;
         
         self.scoreStr.text = [NSString stringWithFormat:@"评分:%0.1f",self.user.pfCount];
         [self.scoreStr sizeToFit];
@@ -113,22 +119,29 @@
         self.teaImg.left = 20;
         self.teaImg.top = 10;
         
-        self.nameStr.text = self.user.realname;
+        NSString *realName = self.user.realname.length > 0 ? self.user.realname :@"      ";
+        
+        self.nameStr.text = realName;
         [self.nameStr sizeToFit];
+        //        self.nameStr.backgroundColor = [UIColor redColor];
         self.nameStr.left = self.teaImg.right + 10;
         self.nameStr.top = self.teaImg.top + 10;
         
         
         self.medalsImg.left = self.nameStr.right + 10;
         self.medalsImg.top = self.nameStr.top;
+        self.medalsImg.hidden = YES;
         
-        self.organizationStr.text = @"机构名称:全国第一钢琴会所";
+        NSString *organizationName = self.user.company.length > 0 ? self.user.company : @"未加入机构";
+        
+        self.organizationStr.text = [NSString stringWithFormat:@"机构名称：%@",organizationName];
         [self.organizationStr sizeToFit];
         self.organizationStr.left = self.nameStr.left;
         self.organizationStr.top = self.nameStr.bottom + 10;
         
         self.logoImg.left = self.organizationStr.right + 10;
         self.logoImg.top = self.organizationStr.top;
+        self.logoImg.hidden = YES;
         
         self.scoreStr.text = [NSString stringWithFormat:@"评分:%0.1f",self.user.pfCount];
         [self.scoreStr sizeToFit];

@@ -33,8 +33,9 @@
     self.tatolCount = [json intForKey:@"totalclass"];
     self.priceTotal = [json stringForKey:@"priceTotal"];
     self.price_total = [json stringForKey:@"price_total"];
-    self.startTime = [json stringForKey:@"latelyStartTimePlan"];
- 
+    self.startTime = [json stringForKey:@"createTime"];
+    self.teaHomeStartTime = [json stringForKey:@"latelyStartTimePlan"];
+    self.latelyStartTimePlan = [json stringForKey:@"latelyStartTimePlan"];
     self.classid = [json longForKey:@"classid"];
  
 

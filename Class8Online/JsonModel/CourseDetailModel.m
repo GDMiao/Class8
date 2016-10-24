@@ -50,6 +50,7 @@
     self.signupStatus = [resultDic intForKey:@"singupStatus"];
     self.canEnterClassID = [resultDic longForKey:@"canEnterClassid"];
     self.classHadFinished = [resultDic intForKey:@"classHadFinished"];
+    self.classTotal = [resultDic intForKey:@"classTotal"];
 
 }
 

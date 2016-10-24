@@ -28,7 +28,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *userTypeDesLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *courseProIcon;
 @property (weak, nonatomic) IBOutlet UILabel *courseProLabel1;
-@property (weak, nonatomic) IBOutlet UILabel *courseProLabel2;
 
 @property (weak, nonatomic) IBOutlet UILabel *isLiveOrRecord;
 @property (weak, nonatomic) IBOutlet UIImageView *courseLine;

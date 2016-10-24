@@ -42,6 +42,7 @@
     if (self.titleView) {
         //有导航
         if ([self isKindOfClass:NSClassFromString(@"FirstLoginViewController")] || [self isKindOfClass:NSClassFromString(@"LoginViewController")] || [self isKindOfClass:NSClassFromString(@"RegisteredViewController")]) {
+            CSLog(@"ios10: %d-- or ios7: %d--" , IS_IOS10 , IS_IOS7);
             self.titleView.frame = CGRectMake(0, 0, SCREENWIDTH, IS_IOS7?64:44);
             self.allContentView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
 
@@ -52,11 +53,15 @@
             self.titleView.frame = CGRectMake(0, 0, SCREENWIDTH, 44);
             self.allContentView.frame = CGRectMake(0, self.titleView.bottom, SCREENWIDTH, SCREENHEIGHT - self.titleView.height);
         }else{
+            CSLog(@"iosSystemNum: %@-- ios10: %d-- or ios7: %d--" ,[[UIDevice currentDevice] systemVersion], IS_IOS10 , IS_IOS7);
+          
+            
             self.titleView.frame = CGRectMake(0, 0, SCREENWIDTH, IS_IOS7?64:44);
             self.allContentView.frame = CGRectMake(0, self.titleView.bottom, SCREENWIDTH, SCREENHEIGHT - self.titleView.height);
         }
     }else {
         //无导航
+        CSLog(@"iosSystemNum: %@-- ios10: %d-- or ios7: %d--" ,[[UIDevice currentDevice] systemVersion], IS_IOS10 , IS_IOS7);
         self.allContentView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
     }
  

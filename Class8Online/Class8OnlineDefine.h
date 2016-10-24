@@ -28,8 +28,12 @@
 
 #define IS_IOS5 ( [[[UIDevice currentDevice] systemVersion] compare:@"5.0"] != NSOrderedAscending )
 #define IS_IOS6 ( [[[UIDevice currentDevice] systemVersion] compare:@"6.0"] != NSOrderedAscending )
-#define IS_IOS7 ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+#define IS_IOS7 ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending)
 #define IS_IOS8 ( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
+#define IS_IOS9 ( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
+#define IS_IOS10  ([[[UIDevice currentDevice]systemVersion]compare:@"10.0" options:NSNumericSearch] !=NSOrderedAscending)
+
+#define IOS7Compare ([[[UIDevice currentDevice]systemVersion]compare:@"7.0" options:NSNumericSearch] != NSOrderedAscending)
 
 typedef unsigned  short __uShort;
 //颜色

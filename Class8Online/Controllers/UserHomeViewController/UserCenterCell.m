@@ -22,7 +22,6 @@
     self.userTypeDesLabel = nil;
     self.courseProIcon = nil;
     self.courseProLabel1 = nil;
-    self.courseProLabel2 = nil;
     self.courseLine = nil;
     self.cellDelegate = nil;
     self.isLiveOrRecord = nil;
@@ -104,10 +103,10 @@
     if ([self.cellStyleTxt isEqualToString:@"我的订购"]) {
         NSString *teaname = self.course.teaName;
         self.userTypeDesLabel.text = [NSString stringWithFormat:@"老师姓名:%@",teaname];
-    }else if ([self.cellStyleTxt isEqualToString:@"我的创建"]){
+    }else if ([self.cellStyleTxt isEqualToString:@"我的创建"] || [self.cellStyleTxt isEqualToString:@"教师首页"]){
         int bmrs = self.course.stuCount;
-        self.userTypeDesLabel.text = [NSString stringWithFormat:@"报名人数:%d/4",bmrs];
-    };
+        self.userTypeDesLabel.text = [NSString stringWithFormat:@"报名人数:%d/8",bmrs];
+    }
     [self.userTypeDesLabel sizeToFit];
     self.userTypeDesLabel.left = self.userTypeIcon.right + 5;
     self.userTypeDesLabel.top = self.courseNameLabel.bottom + 10;
@@ -117,43 +116,41 @@
     self.courseProIcon.left = self.userTypeIcon.left;
     self.courseProIcon.top = self.userTypeDesLabel.bottom + 12;
     
-    if(self.course.startTime){
+    if([self.cellStyleTxt isEqualToString:@"教师首页"]){
+        if (self.course.teaHomeStartTime.length > 0) {
+            NSString *datastr = [NSMutableString stringWithFormat:@"%@",self.course.teaHomeStartTime];
+            NSMutableAttributedString *AttributedStr = [[NSMutableAttributedString alloc]initWithString:datastr];
+            [AttributedStr addAttribute:NSForegroundColorAttributeName value:[UIColor colorWithRed:80.0/255.0 green:179.0/255.0 blue:57.0/255.0 alpha:1] range:NSMakeRange(11, 5)];
+            self.courseProLabel1.attributedText = AttributedStr;
+        }
+        
+    }else{
         NSString *datastr = [NSMutableString stringWithFormat:@"%@",self.course.startTime];
-        //        datastr = [datastr substringFromIndex:5];
-        datastr = [datastr substringToIndex:10];
-
         self.courseProLabel1.text = datastr;
     }
+
 
     [self.courseProLabel1 sizeToFit];
     self.courseProLabel1.left = self.courseProIcon.right + 5;
     self.courseProLabel1.top = self.userTypeDesLabel.bottom + 10;
     
-    if (self.course.startTime) {
-        NSString *timestr = [NSMutableString stringWithFormat:@"%@",self.course.startTime];
-        timestr = [timestr substringFromIndex:11];
 
-        self.courseProLabel2.text = timestr;
-    }
-
-    [self.courseProLabel2 sizeToFit];
-    self.courseProLabel2.left = self.courseProLabel1.right +5;
-    self.courseProLabel2.top = self.courseProLabel1.top;
-
-    self.priceBgImg.left = self.courseProLabel2.right + 22;
+    self.priceBgImg.left = self.courseProLabel1.right + 22;
     self.priceBgImg.top = self.userTypeDesLabel.bottom + 5;
     self.priceBgImg.right = SCREENWIDTH - 20;
     
     if ([self.course.price_total isEqualToString:@"0"]) {
         self.priceLabel.text = @" 免费";
     }else{
-        self.priceLabel.text = [NSString stringWithFormat:@" %@元",self.course.priceTotal];
+        self.priceLabel.text = [NSString stringWithFormat:@"%@元",self.course.priceTotal];
     }
     
     [self.priceLabel sizeToFit];
-    self.priceLabel.left = self.priceBgImg.left + (self.priceBgImg.width/2 - self.priceLabel.width/2);
-    self.priceLabel.top = self.priceBgImg.top + (self.priceBgImg.height - self.priceLabel.height) /2;;
-
+    self.priceLabel.textAlignment = NSTextAlignmentCenter;
+//    self.priceLabel.left = self.priceBgImg.left + (self.priceBgImg.width/2 - self.priceLabel.width/2);
+//    self.priceLabel.top = self.priceBgImg.top + (self.priceBgImg.height - self.priceLabel.height) /2;;
+    self.priceLabel.frame = self.priceBgImg.frame;
+    self.priceLabel.left = self.priceBgImg.left + 5;
     self.courseView.height = self.courseIcon.bottom + 17;
     self.courseLine.frame = CGRectMake(0, self.courseView.height-1, SCREENWIDTH, 1);
 

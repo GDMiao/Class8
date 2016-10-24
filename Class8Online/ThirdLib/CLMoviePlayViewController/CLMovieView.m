@@ -451,7 +451,7 @@ const int askStuVideoGlviewTAG = 2002;
     
     self.didChangeTeaVideosId = videoID;
     CSLog(@"CLMovieView ===>> 开始播放 音视频地址:%@",self.teaVideosUrl);
-    struct PlayAddress pa[4];
+    struct PlayAddress pa[3];
     int nPaNum = 0;
     int nPlayType = VIDEOTYPE|AUDIOTYPE;
     
@@ -460,40 +460,43 @@ const int askStuVideoGlviewTAG = 2002;
     pa[0].bIsStudent =false;
     pa[1].bIsStudent =false;
     pa[2].bIsStudent =false;
-    pa[3].bIsStudent =false;
+//    pa[3].bIsStudent =false;
     switch (self.didChangeTeaVideosId) {
         case 1:
         {
-            pa[1].bIsMainVideo = true;
-            pa[1].bIsVideShow = true;
-            pa[2].bIsMainVideo = false;
+            pa[0].bIsMainVideo = true;
+            pa[0].bIsVideShow = true;
+            pa[1].bIsMainVideo = false;
+            pa[1].bIsVideShow = false;
             pa[2].bIsVideShow = false;
-            pa[3].bIsVideShow = false;
-            pa[3].bIsMainVideo = false;
-            pa[1].hwnd = (__bridge void*)self.teaVideoGlView;
+            pa[2].bIsMainVideo = false;
+            pa[0].hwnd = (__bridge void*)self.teaVideoGlView;
+            pa[0].nMediaType |= AUDIOTYPE;
         }
             break;
         case 2:
         {
-            pa[1].bIsMainVideo = false;
-            pa[1].bIsVideShow = false;
-            pa[2].bIsMainVideo = true;
-            pa[2].bIsVideShow = true;
-            pa[3].bIsVideShow = false;
-            pa[3].bIsMainVideo = false;
-            pa[2].hwnd = (__bridge void*)self.teaVideoGlView;
+            pa[0].bIsMainVideo = false;
+            pa[0].bIsVideShow = false;
+            pa[1].bIsMainVideo = true;
+            pa[1].bIsVideShow = true;
+            pa[2].bIsVideShow = false;
+            pa[2].bIsMainVideo = false;
+            pa[1].hwnd = (__bridge void*)self.teaVideoGlView;
+            pa[1].nMediaType |= AUDIOTYPE;
             
         }
             break;
         case 3:
         {
+            pa[0].bIsMainVideo = false;
+            pa[0].bIsVideShow = false;
             pa[1].bIsMainVideo = false;
             pa[1].bIsVideShow = false;
-            pa[2].bIsMainVideo = false;
-            pa[2].bIsVideShow = false;
-            pa[3].bIsVideShow = true;
-            pa[3].bIsMainVideo = true;
-            pa[3].hwnd = (__bridge void*)self.teaVideoGlView;
+            pa[2].bIsVideShow = true;
+            pa[2].bIsMainVideo = true;
+            pa[2].hwnd = (__bridge void*)self.teaVideoGlView;
+            pa[0].nMediaType |= AUDIOTYPE;
             
         }
             break;
@@ -740,11 +743,11 @@ const int askStuVideoGlviewTAG = 2002;
     if ([self.askLoginUserVideoPushUrl rangeOfString:@"|@|"].location!= NSNotFound) {
         nStreamType = SOURCECAMERA|SOURCEDEVAUDIO;
     }else {
-        nStreamType = SOURCECAMERA;
+        nStreamType = SOURCECAMERA|SOURCEDEVAUDIO;
     }
     struct PublishParam param;
     param.VU[0].nSelectCameraID = 0;
-    param.VU[0].nType = SOURCECAMERA;
+    param.VU[0].nType = SOURCECAMERA|SOURCEDEVAUDIO;
     param.nVUNum = 1;
     param.ml = m;
     param.mr = LISTENERROLE;

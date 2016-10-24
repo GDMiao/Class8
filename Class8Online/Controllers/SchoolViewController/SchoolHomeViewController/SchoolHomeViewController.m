@@ -152,7 +152,7 @@ int totalRequesNum = 0;
     [self createLocalScrollView];
     self.tableData = [NSMutableArray array];
     [self resetNavView];
-    self.navTitleL.text = @"哆来音乐";
+    self.navTitleL.text = @"课吧";
     self.allContentView.frame = CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT);
     self.tableView.frame = CGRectMake(0, 0, self.allContentView.width, self.allContentView.height - 49);
     self.tableView.dataSource = self;

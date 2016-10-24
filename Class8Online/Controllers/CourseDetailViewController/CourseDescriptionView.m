@@ -85,11 +85,15 @@ const int TotalRequestCount = 1;
     self.jqBgImg.left = self.coursePrice.right + 10;
     self.jqBgImg.top = self.infoBgImg.top + 20;
     
-    self.jqLabel.text = [NSString stringWithFormat:@" %0.2f元",self.course.coursePrice];
+    self.jqLabel.text = self.course.coursePrice > 10.0 ? [NSString stringWithFormat:@"%0.0f元",self.course.coursePrice] : [NSString stringWithFormat:@" %0.2f元",self.course.coursePrice];
+
     [self.jqLabel sizeToFit];
     self.jqLabel.left = self.jqBgImg.left + (self.jqBgImg.width - self.jqLabel.width) /2;
     self.jqLabel.top = self.jqBgImg.top + (self.jqBgImg.height - self.jqLabel.height) /2;;
 //    self.jqLabel.width = self.jqBgImg.width;
+    self.jqLabel.frame = self.jqBgImg.frame;
+    self.jqLabel.left = self.jqBgImg.left + 5;
+    self.jqLabel.textAlignment = NSTextAlignmentCenter;
     
     self.teachingTea.left = self.coursePrice.left;
     self.teachingTea.top = self.coursePrice.bottom + 10;
@@ -136,7 +140,7 @@ const int TotalRequestCount = 1;
     self.infobutton.left = 10;
     self.infobutton.bottom =  self.infoView.bottom - 10;
     self.infobutton.width = self.width - 2*self.infobutton.left;
-    if (self.course.classHadFinished ==0) {
+    if (self.course.classHadFinished < self.course.classTotal) {
         if (self.course.signupStatus == 0) {
             [self.infobutton setTitle:@"立即报名" forState:UIControlStateNormal];
             self.infobutton.tag = 1001;
@@ -144,7 +148,7 @@ const int TotalRequestCount = 1;
             [self.infobutton setTitle:@"进入课堂" forState:UIControlStateNormal];
             self.infobutton.tag = 1002;
         }
-    }else if (self.course.classHadFinished == 1){
+    }else if (self.course.classHadFinished == self.course.classTotal){
         [self.infobutton setTitle:@"课程结束" forState:UIControlStateNormal];
     }
     

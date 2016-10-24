@@ -76,14 +76,14 @@ typedef enum {
     NSMutableDictionary *section1_dic5 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"手机号",LEFT_TXT,self.user.mobile,RIGHT_TXT,[NSNumber numberWithBool:YES],HAS_EDIT,nil];
     NSMutableArray *section1 = [[NSMutableArray alloc] initWithObjects:section1_dic1,section1_dic2,section1_dic3,section1_dic4,section1_dic5, nil];
 
-
+/*
     NSMutableDictionary *section2_dic1 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"学校",LEFT_TXT,self.user.schoolName,RIGHT_TXT,nil];
     NSMutableDictionary *section2_dic2 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"院系",LEFT_TXT,self.user.departments,RIGHT_TXT,nil];
     NSMutableDictionary *section2_dic3 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"专业",LEFT_TXT,self.user.professional,RIGHT_TXT,nil];
     NSMutableDictionary *section2_dic4 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"班级",LEFT_TXT,self.user.grade,RIGHT_TXT,nil];
     NSMutableDictionary *section2_dic5 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"身份",LEFT_TXT,self.user.authority==UserAuthorityType_TEACHER?@"老师":@"学生",RIGHT_TXT,nil];
     NSMutableArray *section2 = [[NSMutableArray alloc] initWithObjects:section2_dic1,section2_dic2,section2_dic3,section2_dic4,section2_dic5, nil];
-
+*/
 
     NSMutableDictionary *section3_dic1 = [[NSMutableDictionary alloc] initWithObjectsAndKeys:@"性别",LEFT_TXT,self.user.gender==UserGender_MALE?@"男":@"女",RIGHT_TXT,[NSNumber numberWithBool:YES],HAS_EDIT,nil];
     
@@ -95,8 +95,8 @@ typedef enum {
     NSMutableArray *section3 = [[NSMutableArray alloc] initWithObjects:section3_dic1,section3_dic2,section3_dic3, nil];
 
     [self.tableViewDataDic setObject:section1 forKey:[NSString stringWithFormat:@"%@%d",TableView_SECTION,0]];
-    [self.tableViewDataDic setObject:section2 forKey:[NSString stringWithFormat:@"%@%d",TableView_SECTION,1]];
-    [self.tableViewDataDic setObject:section3 forKey:[NSString stringWithFormat:@"%@%d",TableView_SECTION,2]];
+//    [self.tableViewDataDic setObject:section2 forKey:[NSString stringWithFormat:@"%@%d",TableView_SECTION,1]];
+    [self.tableViewDataDic setObject:section3 forKey:[NSString stringWithFormat:@"%@%d",TableView_SECTION,1]];
     
     [self.tableView reloadData];
 }

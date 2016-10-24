@@ -973,6 +973,7 @@ segmentCurrentIndex;                                                    /*选择
             //提问学生
             self.askStuUid = cActionModel.uid;
             NSString *stuVideoUrl = [self.userVideoListDic objectForKey:[NSString stringWithFormat:@"%lld",cActionModel.uid]];
+            
             if (cActionModel.uid != [UserAccount shareInstance].uid) {
                 ClassRoomLog(@"被提问学生的音视频地址: %@",stuVideoUrl);
                 User *u = [self.userListDic objectForKey:[NSString stringWithFormat:@"%lld",cActionModel.uid]];
@@ -982,8 +983,10 @@ segmentCurrentIndex;                                                    /*选择
                                                 CSLocalizedString(@"live_VC_role_stu")]];
                 [self.topContenView playStuVideo:stuVideoUrl];
             }else {
-                ClassRoomLog(@"被提问学生(登录用户)的音视频地址: %@",[UserAccount shareInstance].loginUser.pushaddr);
-                [self.topContenView startLoginUserVideo:[UserAccount shareInstance].loginUser.pushaddr];
+                NSArray *rtmpStrArray = [[UserAccount shareInstance].loginUser.pushaddr componentsSeparatedByString:@"|@|"];
+                NSString *rtmpStr = [rtmpStrArray objectAtIndex:0];
+                ClassRoomLog(@"被提问学生(登录用户)的音视频地址: %@",rtmpStr);
+                [self.topContenView startLoginUserVideo:rtmpStr];
             }
         }
             break;
@@ -1176,8 +1179,10 @@ segmentCurrentIndex;                                                    /*选择
             //记录音视频地址及视频路数
             self.teaMediaSrcUrl = userWel.teaVideoSrcUrl;
             self.teaVideoId=  userWel.teachervedio==100?0:userWel.teachervedio;
-            ClassRoomLog(@"进入课堂成功音视频地址: %@",self.teaMediaSrcUrl);
-            [self.topContenView createVideoPlayer:self.teaMediaSrcUrl playVideoId:MAX(1, self.teaVideoId+1)];
+            NSArray *rtmpStrArray = [self.teaMediaSrcUrl componentsSeparatedByString:@"|@|"];
+            NSString *rtmpStr = [rtmpStrArray objectAtIndex:0];
+            ClassRoomLog(@"进入课堂成功音视频地址: %@",rtmpStr);
+            [self.topContenView createVideoPlayer:rtmpStr playVideoId:MAX(1, self.teaVideoId+1)];
             [self mySelfIntoClassRooom:userWel];
             
             //课堂权限

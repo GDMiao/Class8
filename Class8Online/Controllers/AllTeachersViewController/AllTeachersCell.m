@@ -58,8 +58,10 @@
         
         self.medalsImg.left = self.nameStr.right + 10;
         self.medalsImg.top = self.nameStr.top;
-        
-        self.organizationStr.text =  [NSString stringWithFormat:@"机构名称:%@",self.user.organization];;
+        self.medalsImg.hidden = YES;
+    
+    NSString *organizationName = self.user.organization.length > 0 ? self.user.organization : @"未加入机构";
+        self.organizationStr.text =  [NSString stringWithFormat:@"机构名称:%@",organizationName];;
    
         [self.organizationStr sizeToFit];
         self.organizationStr.left = self.nameStr.left;
@@ -67,6 +69,7 @@
         
         self.logoImg.left = self.organizationStr.right + 10;
         self.logoImg.top = self.organizationStr.top;
+        self.logoImg.hidden = YES;
         
         self.scoreStr.text = [NSString stringWithFormat:@"评分:%0.1f",self.user.pfCount];
         [self.scoreStr sizeToFit];

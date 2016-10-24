@@ -24,6 +24,8 @@ teaSex;
 *priceTotal,
 *price_total;
 @property (nonatomic, strong) NSString *startTime;
+@property (nonatomic, strong) NSString *teaHomeStartTime;
+@property (nonatomic, strong) NSString *latelyStartTimePlan;
 @property (nonatomic, assign) BOOL courseOver;
 @end
 

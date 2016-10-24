@@ -111,6 +111,7 @@
         
         //左按钮
         self.leftButton.hidden = NO;
+       
         self.leftButton.frame = CGRectMake(5,IS_IOS7?20 + ((self.height - 20) - 44) * 0.5:(self.height- 44) * 0.5, 44, 44);
         [self.leftButton setImage:[UIImage imageNamed:@"返回按钮"] forState:UIControlStateNormal];
         
@@ -142,7 +143,7 @@
         self.bjImgView.image = navImg;
         self.bjImgView.frame = self.bounds;
 
-        
+    
         self.leftButton.frame = CGRectMake(5,IS_IOS7?20 + ((self.height - 20) - 44) * 0.5:(self.height- 44) * 0.5, 44, 44);
         [self.leftButton setImage:[UIImage imageNamed:@"返回按钮"] forState:UIControlStateNormal];
         
@@ -199,10 +200,12 @@
         
         //左右按钮
         self.leftButton.hidden = NO;
+      
         self.leftButton.frame = CGRectMake(5,IS_IOS7?20 + ((self.height - 20) - 44) * 0.5:(self.height- 44) * 0.5, 44, 44);
         [self.leftButton setImage:[UIImage imageNamed:@"返回按钮"] forState:UIControlStateNormal];
         
         self.rightButton.hidden = NO;
+    
         self.rightButton.frame = CGRectMake(self.width - 44 - 5,IS_IOS7?20 + ((self.height - 20) - 44) * 0.5:(self.height- 44) * 0.5, 44, 44);
         [self.rightButton setTitle:@"设置" forState:UIControlStateNormal];
         [self.rightButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -210,6 +213,7 @@
         
         self.titleLabel.textColor = [UIColor whiteColor];
         self.titleLabel.text = title;
+      
         self.titleLabel.frame = CGRectMake(54, IS_IOS7?20:0, SCREENWIDTH - 108, IS_IOS7?self.height - 20:self.height);
     }else if (CTitleStyle_Camera == style) {
         self.backgroundColor = [UIColor blackColor];

@@ -71,19 +71,22 @@
     }
     [self.avatar sd_setImageWithURL:[NSURL URLWithString:avatartUrl] placeholderImage:[UIImage imageNamed:@"默认头像"]];
     self.avatar.top = 28+(IS_IOS7 ? 20:0);
+    CSLog(@"ios10: %d-- or ios7: %d--" , IS_IOS10 , IS_IOS7);
+
     self.avatar.left = 28;
     self.avatar.userInteractionEnabled = YES;
     UITapGestureRecognizer *avaterTap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(avatarTapGestureAction:)];
     avaterTap.delegate = self;
     [self.avatar addGestureRecognizer:avaterTap];
     
-    
-    self.nameLabel.text = [UserAccount shareInstance].loginUser.realname;
+    NSString *realName = [UserAccount shareInstance].loginUser.realname ? [UserAccount shareInstance].loginUser.realname:@"";
+    self.nameLabel.text = realName.length > 0 ? realName : @"请登录";
     [self.nameLabel sizeToFit];
     self.nameLabel.top = self.avatar.top + 8;
     self.nameLabel.left = self.avatar.right + 15;
     
-    self.nickLabel.text = [NSString stringWithFormat:@"(%@)",[UserAccount shareInstance].loginUser.nickName];
+    NSString *nickstr = [UserAccount shareInstance].loginUser.nickName?[UserAccount shareInstance].loginUser.nickName:@"";
+    self.nickLabel.text = nickstr.length > 0 ?[NSString stringWithFormat:@"(%@)",nickstr]: @"";
     [self.nickLabel sizeToFit];
     self.nickLabel.left = self.nameLabel.right + 9;
     self.nickLabel.bottom = self.nameLabel.bottom;
@@ -252,6 +255,6 @@
 - (IBAction)editInfoAction:(UIButton *)sender {
     CSLog(@"编辑资料");
     PersonalInfoViewController *pinfoVC =[[PersonalInfoViewController alloc] initWithUser:[UserAccount shareInstance].loginUser];
-    [self.navigationController pushViewController:pinfoVC animated:YES];
+    [self.tabbarVC.navigationController pushViewController:pinfoVC animated:YES];
 }
 @end
